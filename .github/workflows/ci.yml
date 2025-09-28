@@ -38,7 +38,7 @@ jobs:
         run: |
           nohup python app.py > flask.log 2>&1 &
           sleep 5
-          
+
       - name: Run tests
         run: |
           pip install pytest requests
