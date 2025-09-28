@@ -9,7 +9,7 @@
   "containerDefinitions": [
     {
       "name": "app",
-      "image": "st369712/python-mid-project:latest",
+      "image": "mid-project-team/python-mid-project:latest",
       "essential": true,
       "portMappings": [{ "containerPort": 5000, "protocol": "tcp" }],
       "logConfiguration": {
