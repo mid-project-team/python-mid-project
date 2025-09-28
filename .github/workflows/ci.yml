@@ -34,6 +34,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run Flask in background
+        run: |
+          nohup python app.py > flask.log 2>&1 &
+          sleep 5
+      
       - name: Run tests
         run: |
           pip install pytest requests
