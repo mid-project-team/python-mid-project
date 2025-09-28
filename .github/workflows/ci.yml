@@ -43,6 +43,7 @@ jobs:
         run: |
           pip install pytest requests
           pytest -q
+# בדיקת העלאה (push) לסניף DEV בלבד - ללא שינוי בקוד
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
