@@ -4,18 +4,14 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
-  "executionRoleArn": "arn:aws:iam::myproject-ci-user:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::myproject-ci-user:role/ECSTaskRole",
+  "executionRoleArn": "arn:aws:iam::361769594235:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
-     "name": "python-mid-project",
-      "image": "361769594235.dkr.ecr.us-east-1.amazonaws.com/python-mid-project:latest",
+      "name": "app",
+      "image": "REPLACED_BY_ACTION",
       "essential": true,
       "portMappings": [
-        {
-          "containerPort": 5000,
-          "protocol": "tcp"
-        }
+        { "containerPort": 5000, "protocol": "tcp" }
       ],
       "logConfiguration": {
         "logDriver": "awslogs",
