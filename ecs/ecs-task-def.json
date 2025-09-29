@@ -7,7 +7,7 @@
   "executionRoleArn": "arn:aws:iam::361769594235:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
-      "name": "app",
+      "name": "python-mid-project",
       "image": "REPLACED_BY_ACTION",
       "essential": true,
       "portMappings": [
