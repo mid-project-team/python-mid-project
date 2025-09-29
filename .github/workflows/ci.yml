@@ -76,7 +76,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         id: render
         with:
-          task-definition: ecs-task-def.json
+          task-definition: ecs/ecs-task-def.json
           container-name: python-mid-project
           image: ${{ env.IMAGE_URI }}
 
