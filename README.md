@@ -77,3 +77,7 @@ curl -X PUT http://127.0.0.1:5000/orders/1 \
 # delete order
 curl -X DELETE http://127.0.0.1:5000/orders/1
 ```
+
+## Web App
+```bash
+# update and see orders in http://localhost:8080/Home.php
