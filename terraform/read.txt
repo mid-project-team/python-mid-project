@@ -1,0 +1,6 @@
+Not to forget need to run
+cd infra
+terraform init
+terraform apply -auto-approve \
+  -var 'region=us-east-1' \
+  -var 'docker_image=st369712/python-mid-project:latest'
