@@ -174,7 +174,7 @@
                 </tr>
             </table>
             <input class="btn" type="submit" value="הוסף" />
-            <!-- <input class="btn" type="button" value="חזור ללא שמירה" onclick="history.back()" /> -->
+            <input class="btn" type="button" value="חזור" onclick="history.back()" />
         </form>
     </div>
 </body>
