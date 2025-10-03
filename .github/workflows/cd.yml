@@ -72,7 +72,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       - name: Retag & Push to ECR
-        if: ${{ secrets.ECR_REPOSITORY != '' }}
+        if: ${{ env.ECR_REPOSITORY != '' }}
         run: |
           ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
           ECR_URI=${ACCOUNT_ID}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}
